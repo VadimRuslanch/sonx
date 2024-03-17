@@ -1,0 +1,118 @@
+.infoPressContainer
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: center
+  gap: 140px
+  max-width: 1032px
+  margin: 108px 0
+
+.infoContainer
+  max-width: 1032px
+
+.title
+  background: linear-gradient(100deg, rgb(255, 106, 38), rgb(0, 175, 255))
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  background-clip: text
+  color: transparent
+  font-size: 64px
+  font-weight: 600
+  line-height: 78px
+  letter-spacing: 0
+  text-align: center
+  max-width: 1032px
+
+.titleBlock
+  color: rgb(26, 115, 156)
+  font-size: 48px
+  font-weight: 600
+  line-height: 59px
+  letter-spacing: 0
+  text-align: left
+  margin-bottom: 70px
+
+.titleBlock::after
+  margin-top: 8px
+  content: ""
+  display: block
+  width: 120px
+  height: 8px
+  background: white
+  border-radius: 16px
+
+.aboutBlock
+  color: rgb(255, 255, 255)
+  font-size: 24px
+  font-weight: 400
+  line-height: 175%
+  letter-spacing: 0
+  text-align: left
+
+.horizontalMediaScroller
+  margin: 0 72px
+  display: grid
+  grid-auto-flow: column
+  grid-gap: calc(var(--gap) / 2)
+
+  overflow-x: auto
+  overscroll-behavior-x: contain
+  scroll-snap-type: x mandatory
+  scroll-padding-inline: var(--gap)
+  touch-action: pan-y
+
+.horizontalMediaScroller
+  figure
+    scroll-snap-align: start
+
+.swiperImg
+  width: 270px
+  height: 250px
+
+.eventList
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  row-gap: 70px
+
+.eventItem
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.eventTitle
+  color: rgb(26, 115, 156)
+  font-size: 40px
+  font-weight: 500
+  line-height: 49px
+  letter-spacing: 0
+  margin-bottom: 8px
+
+.eventDate
+  color: rgb(255, 255, 255)
+  font-size: 16px
+  font-weight: 500
+  line-height: 20px
+  letter-spacing: 0
+  margin-bottom: 36px
+
+.eventDescription
+  color: rgb(255, 255, 255)
+  font-size: 24px
+  font-weight: 400
+  line-height: 175%
+  letter-spacing: 0
+  margin-bottom: 36px
+
+.eventLink
+  display: flex
+  align-items: center
+  column-gap: 10px
+
+.eventLinkText
+
+  color: rgb(30, 132, 179)
+  font-size: 24px
+  font-weight: 500
+  line-height: 29px
+  letter-spacing: 0
