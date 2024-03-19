@@ -11,8 +11,6 @@ function photoSlideComponent() {
     const settings = {
         adaptiveHeight: true,
         variableWidth: true,
-        // focusOnSelect: true,
-        // infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         speed: 500
