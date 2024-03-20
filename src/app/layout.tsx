@@ -2,7 +2,7 @@
 
 import type {Metadata} from 'next';
 import {Montserrat} from 'next/font/google';
-import './globals.css';
+import './globals.sass';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import React from 'react';

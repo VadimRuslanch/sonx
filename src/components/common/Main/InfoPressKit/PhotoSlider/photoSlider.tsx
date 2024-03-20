@@ -9,11 +9,28 @@ import {photoGallery} from '@/components/utils/constants'
 
 function photoSlideComponent() {
     const settings = {
-        adaptiveHeight: true,
         variableWidth: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        speed: 500
+        slidesToShow: 3, // Значение по умолчанию для широких экранов
+        slidesToScroll: 2,
+        speed: 500,
+        responsive: [
+            {
+                breakpoint: 768, // Максимальная ширина для этого диапазона настроек
+                settings: {
+                    slidesToShow: 1, // Отображать только один слайд
+                    slidesToScroll: 1, // Прокручивать по одному слайду
+                    variableWidth: false // Вы можете отключить это, если хотите, чтобы слайды были одинаковой ширины
+                }
+            },
+            {
+                breakpoint: 320, // Этот breakpoint и ниже будет использовать настройки указанные для 768, если нет более специфичных настроек
+                settings: {
+                    slidesToShow: 1, // Это не обязательно, если вы хотите те же настройки, что и для 768px
+                    slidesToScroll: 1, // Аналогично
+                    variableWidth: false // Аналогично
+                }
+            }
+        ]
     };
 
     return (
@@ -33,26 +50,6 @@ function photoSlideComponent() {
                         />
                     </div>
                 ))}
-
-                {/*<div className={styles.slide}>*/}
-                {/*    <Image className={styles.slideImg} src={img} alt={'Photo'}/>*/}
-                {/*</div>*/}
-
-                {/*<div className={styles.slide}>*/}
-                {/*    <Image className={styles.slideImg} src={img} alt={'Photo'}/>*/}
-                {/*</div>*/}
-
-                {/*<div className={styles.slide}>*/}
-                {/*    <Image className={styles.slideImg} src={img} alt={'Photo'}/>*/}
-                {/*</div>*/}
-
-                {/*<div className={styles.slide}>*/}
-                {/*    <Image className={styles.slideImg} src={img} alt={'Photo'}/>*/}
-                {/*</div>*/}
-
-                {/*<div className={styles.slide}>*/}
-                {/*    <Image className={styles.slideImg} src={img} alt={'Photo'}/>*/}
-                {/*</div>*/}
 
             </Slider>
 

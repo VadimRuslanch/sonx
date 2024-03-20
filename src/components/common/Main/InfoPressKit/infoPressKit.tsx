@@ -15,7 +15,7 @@ function ElectronicPressKitComponent() {
 
 
             <div className={styles.infoContainer}>
-                <h3 className={styles.titleBlock}>О нас</h3>
+                <h3 className={styles.titleBlock}>О&nbsp;нас</h3>
                 <p className={styles.aboutBlock}>
                     Cover-trio SONX создаст в Вашем заведении романтичную и теплую атмосферу для гостей. Выступаем на
                     мероприятиях: корпоративах, праздниках, днях рождения, свадебных церемониях. Создаем негромкий фон
@@ -28,46 +28,42 @@ function ElectronicPressKitComponent() {
 
             <div className={styles.infoContainer}>
                 <h3 className={styles.titleBlock}>Фотогалерея</h3>
-                <PhotoSlideComponent/>
+                <p className={styles.aboutBlock}>Завтра добавлю фото</p>
+
+                    {/*<PhotoSlideComponent/>*/}
             </div>
 
             <div className={styles.infoContainer}>
                 <h3 className={styles.titleBlock}>Видео</h3>
-                <div className={styles.slider}>
-                    <div className={styles.sliderWr}>
-                        <div className={styles.slide}></div>
-                    </div>
+                <div className={styles.video}>
+                    <p className={styles.aboutBlock}>Завтра добавлю видео</p>
+                    {/*<iframe width="560" height="315" src="https://www.youtube.com/embed/qzGXjV9Tbwc?si=frCM8anPPCtoCv9W"*/}
+                    {/*        title="YouTube video player" frameBorder="0"*/}
+                    {/*        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"*/}
+                    {/*        allowFullScreen></iframe>*/}
+
                 </div>
             </div>
 
             <div className={styles.infoContainer}>
-                <h3 className={styles.titleBlock}>Ближайшие концерты</h3>
+                <h3 className={styles.eventTitle}>Ближайшие концерты</h3>
                 <div className={styles.eventList}>
 
                     <div className={styles.eventItem}>
-                        <h4 className={styles.eventTitle}>Tangiers Lounge</h4>
-                        <span className={styles.eventDate}>
+                        <h4 className={styles.eventArea}>Tangiers Lounge</h4>
+                        <span className={styles.eventText}>
                             12 апреля 2024 г.
-                            <br/>
+                        </span>
+                        <span className={styles.eventText}>
                             г. Ростов-на-Дону, ул. Пушкинская, дом 116
                         </span>
-                        <p className={styles.eventDescription}>Мое описание</p>
-                        <Link className={styles.eventLink} href='/'>
-                            <span className={styles.eventLinkText}>Узнать подробнее</span>
-                            <Image className={styles.eventlinkImg} src={arrowLink} alt={'стрелочка'}/>
-                        </Link>
-                    </div>
 
-                    <div className={styles.eventItem}>
-                        <h4 className={styles.eventTitle}>Мой концерт</h4>
-                        <span className={styles.eventDate}>Дата мероприятия</span>
-                        <p className={styles.eventDescription}>Мое описание</p>
-                        <Link className={styles.eventLink} href='/'>
-                            <span className={styles.eventLinkText}>Узнать подробнее</span>
-                            <Image className={styles.eventlinkImg} src={arrowLink} alt={'стрелочка'}/>
-                        </Link>
+                        {/*<p className={styles.eventDescription}>Мое описание</p>*/}
+                        {/*<Link className={styles.eventLink} href='/'>*/}
+                        {/*    <span className={styles.eventLinkText}>Узнать подробнее</span>*/}
+                        {/*    <Image className={styles.eventlinkImg} src={arrowLink} alt={'стрелочка'}/>*/}
+                        {/*</Link>*/}
                     </div>
-
                 </div>
             </div>
 

@@ -1,0 +1,21 @@
+// Определяем переменные для различных размеров экрана
+$mobile: 320px
+$tablet: 768px
+$desktop: 1024px
+$large-desktop: 1440px
+$extra-large-desktop: 1920px
+
+.page
+  padding: 0 10px
+
+  @media (min-width: $tablet)
+    padding: 0 16px
+
+  @media (min-width: $desktop)
+    padding: 0 30px
+
+  @media (min-width: $large-desktop)
+    padding: 0 40px
+
+  @media (min-width: $extra-large-desktop)
+    padding: 0 50px

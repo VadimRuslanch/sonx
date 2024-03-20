@@ -1,18 +1,24 @@
+@import @/assets/styles/common.module
+
 .submit
+  width: 100%
   background: rgb(255, 255, 255)
   display: flex
   flex-direction: column
   align-items: center
   justify-content: center
-  padding: 0 60px
+  row-gap: 20px
+  padding: 60px 0
 
-
+  @media (min-width: $large-desktop)
+    width: 40%
+    padding: 80px 0
 
 .inputContainer
+  width: 80%
   display: flex
   flex-direction: column
   row-gap: 8px
-  margin-bottom: 20px
 
 .inputLabel
   color: rgb(0, 0, 0)
@@ -26,4 +32,4 @@
   background: rgb(242, 242, 242)
   border: none
   height: 60px
-  width: 631px
+  width: 100%
