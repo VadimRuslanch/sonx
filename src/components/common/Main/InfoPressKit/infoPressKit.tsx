@@ -3,9 +3,11 @@ import PhotoSlideComponent from "@/components/common/Main/InfoPressKit/PhotoSlid
 import Image from "next/image";
 import Link from "next/link";
 
+import VideoSlider from "@/components/common/Main/InfoPressKit/VideoSlider/videoSlider";
+
 import arrowLink from '@/assets/images/arrow-link.svg'
 
-function ElectronicPressKitComponent() {
+function InfoPressKitComponent() {
 
     return (
         <section className={styles.infoPressContainer}>
@@ -35,14 +37,7 @@ function ElectronicPressKitComponent() {
 
             <div className={styles.infoContainer}>
                 <h3 className={styles.titleBlock}>Видео</h3>
-                <div className={styles.video}>
-                    <p className={styles.aboutBlock}>Завтра добавлю видео</p>
-                    {/*<iframe width="560" height="315" src="https://www.youtube.com/embed/qzGXjV9Tbwc?si=frCM8anPPCtoCv9W"*/}
-                    {/*        title="YouTube video player" frameBorder="0"*/}
-                    {/*        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"*/}
-                    {/*        allowFullScreen></iframe>*/}
-
-                </div>
+                <VideoSlider/>
             </div>
 
             <div className={styles.infoContainer}>
@@ -71,4 +66,4 @@ function ElectronicPressKitComponent() {
     )
 }
 
-export default ElectronicPressKitComponent
+export default InfoPressKitComponent

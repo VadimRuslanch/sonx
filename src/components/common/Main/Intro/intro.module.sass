@@ -1,5 +1,45 @@
+@import @/assets/styles/common.module
+
 .intro
   position: relative
   height: 100vh
   width: 100%
   background: url("../../../../assets/images/intro-photo.jpg") no-repeat bottom / cover
+
+.link
+  display: block
+  //color: rgb(45, 44, 47)
+  font-size: 24px
+  font-weight: 400
+  line-height: 120%
+  letter-spacing: 0
+  position: absolute
+  padding: 5px
+  color: azure
+
+  @media (min-width: $tablet)
+    font-size: 20px
+    color: rgb(16, 67, 71)
+
+
+.link1
+  bottom: 10%
+  left: 5%
+
+  @media (min-width: $tablet)
+    bottom: 45%
+
+.link2
+  bottom: 42%
+  right: 40%
+
+  @media (min-width: $tablet)
+    bottom: 60%
+    right: 50%
+
+.link3
+  bottom: 5%
+  right: 5%
+
+  @media (min-width: $tablet)
+    bottom: 40%
