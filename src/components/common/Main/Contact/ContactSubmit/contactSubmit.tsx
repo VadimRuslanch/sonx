@@ -11,27 +11,27 @@ function ContactSubmit() {
     const [message, setMessage] = useState('');
 
     // Обработчик отправки формы
-    // const handleSubmit = async (e: { preventDefault: () => void; }) => {
-    //     e.preventDefault();
-    //
-    //     // Отправляем данные формы на API-маршрут
-    //     const response = await fetch('/api/send', {
-    //         method: 'POST',
-    //         headers: {
-    //             'Content-Type': 'application/json',
-    //         },
-    //         body: JSON.stringify({ name, email, message }),
-    //     });
-    //
-    //     const data = await response.json();
-    //     if (response.ok) {
-    //         // Обрабатываем успешную отправку
-    //         console.log('Message sent:', data);
-    //     } else {
-    //         // Обрабатываем ошибку
-    //         console.error('Send error:', data.error);
-    //     }
-    // };
+    const handleSubmit = async (e: { preventDefault: () => void; }) => {
+        e.preventDefault();
+        console.log({name, email, message})
+        // Отправляем данные формы на API-маршрут
+        const response = await fetch('/api/send', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ name, email, message }),
+        });
+
+        const data = await response.json();
+        if (response.ok) {
+            // Обрабатываем успешную отправку
+            console.log('Message sent:', data);
+        } else {
+            // Обрабатываем ошибку
+            console.error('Send error:', data.error);
+        }
+    };
 
     return (
         <section className={styles.submit}>
@@ -48,11 +48,15 @@ function ContactSubmit() {
 
                 <label className={styles.inputContainer}>
                     <span className={styles.inputLabel}>Your message</span>
-                    <textarea className={styles.input} value={message} onChange={(e) => setMessage(e.target.value)}/>
+                    <textarea className={styles.input}
+                              spellCheck={true}
+                              rows={6}
+                              autoComplete="off"
+                              value={message} onChange={(e) => setMessage(e.target.value)}/>
                 </label>
 
                 <div className={styles.buttonContainer}>
-                    <button className={styles.button} type="submit">
+                    <button className={styles.button} type="submit" onClick={handleSubmit}>
                         <span className={styles.buttonText}>
                             Отправить
                         </span>
