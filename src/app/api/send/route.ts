@@ -1,6 +1,6 @@
 import {EmailTemplate} from '@/components/emailTemplate';
 import {Resend} from 'resend';
-import * as React from 'react';
+import React from 'react';
 
 const resend = new Resend("re_Ruwka7Q1_4BKcrzFkEfCTsGzxRe7GXfqv");
 
