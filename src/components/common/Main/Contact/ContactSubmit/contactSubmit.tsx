@@ -10,7 +10,6 @@ function ContactSubmit() {
     const handleSubmit = async (e: { preventDefault: () => void; }) => {
         e.preventDefault();
 
-
         const response = await fetch('/api/send', {
             method: 'POST',
             headers: {
