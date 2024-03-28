@@ -1,4 +1,3 @@
-import common from '@/assets/styles/common.module.sass'
 import styles from './footer.module.sass'
 
 
