@@ -28,7 +28,7 @@ function newSingle() {
             <div className={styles.songContainer}>
                 <div className={styles.songInfo}>
                     <h1 className={styles.title}>New single ‘Gleb Petrov’ out NOW</h1>
-                    <Link className={styles.link} href='#'/>
+                    <Link className={styles.link} href='src/components/Main/Intro/NewSingle#'/>
                 </div>
                 <div className={styles.background}/>
             </div>

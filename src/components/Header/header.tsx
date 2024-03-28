@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from './header.module.sass'
-import logo from '@/assets/images/logo-header.svg'
+import logo from '@/../../../public/images/logo-header.svg'
 
 function HeaderComponent(): JSX.Element {
     return (

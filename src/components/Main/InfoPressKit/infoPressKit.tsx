@@ -1,16 +1,17 @@
 import styles from './infoPressKit.module.sass'
-import PhotoSlideComponent from "@/components/common/Main/InfoPressKit/PhotoSlider/photoSlider";
+import PhotoSlideComponent from "@/components/Main/InfoPressKit/PhotoSlider/photoSlider";
 import Image from "next/image";
 import Link from "next/link";
 
-import VideoSlider from "@/components/common/Main/InfoPressKit/VideoSlider/videoSlider";
+import VideoSlider from "@/components/Main/InfoPressKit/VideoSlider/videoSlider";
 
-import arrowLink from '@/assets/images/arrow-link.svg'
+import arrowLink from '@/../../../../public/images/arrow-link.svg'
 
 function InfoPressKitComponent() {
 
     return (
         <section className={styles.infoPressContainer}>
+
             <div className={styles.titleContainer}>
                 <h2 className={styles.title}>SONX</h2>
             </div>
@@ -32,13 +33,14 @@ function InfoPressKitComponent() {
                 <h3 className={styles.titleBlock}>Фотогалерея</h3>
                 <p className={styles.aboutBlock}>Завтра добавлю фото</p>
 
-                    {/*<PhotoSlideComponent/>*/}
+                {/*<PhotoSlideComponent/>*/}
             </div>
 
-            <div className={styles.infoContainer}>
+            <div>
                 <h3 className={styles.titleBlock}>Видео</h3>
                 <VideoSlider/>
             </div>
+
 
             <div className={styles.infoContainer}>
                 <h3 className={styles.eventTitle}>Ближайшие концерты</h3>

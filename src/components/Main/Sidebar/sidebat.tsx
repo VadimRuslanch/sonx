@@ -7,7 +7,7 @@ import style from './sidebat.module.sass'
 // import spotify from '@/assets/images/icons/social-icon-spotify.svg'
 // import twitter from '@/assets/images/icons/social-icon-twitter.svg'
 import youtube from '@/assets/images/icons/social-icon-youtube.svg'
-import vk from '../../../../assets/images/icons/social-icon-vk.svg'
+import vk from '@/assets/images/icons/social-icon-vk.svg'
 
 function SidebarLinks(): JSX.Element {
     return (

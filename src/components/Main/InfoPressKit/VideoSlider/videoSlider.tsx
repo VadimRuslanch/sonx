@@ -3,8 +3,7 @@ import styles from './videoSlider.module.sass'
 function VidoeSlider() {
     return (
         <div className={styles.video}>
-            <iframe className={styles.videoIframe}
-
+            <iframe className={styles.player}
                     loading="lazy"
                     frameBorder="0"
                     src="https://www.youtube.com/embed/qzGXjV9Tbwc?si=frCM8anPPCtoCv9W"

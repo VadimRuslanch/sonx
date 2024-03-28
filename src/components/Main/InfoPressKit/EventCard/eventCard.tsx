@@ -1,7 +1,7 @@
 import styles from './eventCard.module.sass'
 import Link from "next/link";
 import Image from "next/image";
-import photo_1 from '@/assets/images/photo-1.png'
+import photo_1 from '@/../../../../../public/images/photo-1.png'
 
 function EventCard(){
     return(

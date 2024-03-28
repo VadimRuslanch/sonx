@@ -3,7 +3,7 @@
 import styles from './photoSlider.module.sass'
 
 import Slider from "react-slick";
-import img from '@/assets/images/photoGallery/photo1.jpg'
+import img from '@/../../../../../public/images/photoGallery/photo1.jpg'
 import Image from "next/image";
 import {photoGallery} from '@/components/utils/constants'
 

@@ -1,8 +1,8 @@
 import styles from './main.module.sass'
-import Intro from "@/components/common/Main/Intro/intro";
-import SidebarLinks from "@/components/common/Main/Sidebar/sidebat";
-import InfoPressKitComponent from "@/components/common/Main/InfoPressKit/infoPressKit";
-import ContactComponent from "@/components/common/Main/Contact/contact";
+import Intro from "@/components/Main/Intro/intro";
+import SidebarLinks from "@/components/Main/Sidebar/sidebat";
+import InfoPressKitComponent from "@/components/Main/InfoPressKit/infoPressKit";
+import ContactComponent from "@/components/Main/Contact/contact";
 
 function MainComponent(): JSX.Element {
     return (

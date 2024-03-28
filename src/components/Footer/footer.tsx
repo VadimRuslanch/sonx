@@ -1,7 +1,7 @@
 import styles from './footer.module.sass'
 
 
-import LinkBarContainer from "@/components/common/Footer/LinkBar/linkBar"
+import LinkBarContainer from "@/components/Footer/LinkBar/linkBar"
 
 function FooterComponent() {
     return (
